@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosmetics — Typingwithkrown.fun</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="hero-svg" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0%" stop-color="#ffb86b"/>
+          <stop offset="50%" stop-color="#b679ff"/>
+          <stop offset="100%" stop-color="#6ce6ff"/>
+        </linearGradient>
+      </defs>
+      <g class="ribbon ribbon-1">
+        <path fill="url(#g1)" d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,133.3C672,128,768,128,864,117.3C960,107,1056,85,1152,96C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </g>
+      <g class="ribbon ribbon-2">
+        <path fill="rgba(255,255,255,0.02)" d="M0,192L48,181.3C96,171,192,149,288,138.7C384,128,480,128,576,133.3C672,139,768,149,864,154.7C960,160,1056,160,1152,160C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </g>
+    </svg>
+  </div>
+
+  <nav class="capsule-nav" aria-label="Main navigation">
+    <div class="logo">Typingwithkrown.fun</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="cosmetics.html">Cosmetics</a>
+      <a href="index.html#connect">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container content cosmetics-page">
+    <section class="cosmetics-header-block">
+      <p class="eyebrow">Customize your vibe</p>
+      <h1>Cosmetics</h1>
+      <p class="lead">Choose your animated background and apply it to your typing experience.</p>
+    </section>
+
+    <section class="cosmetics-grid" aria-label="Background selections">
+      <button class="cosmetic-card is-active" data-theme="cream" type="button">
+        <span class="card-preview preview-cream"></span>
+        <span class="card-name">Cream</span>
+      </button>
+      <button class="cosmetic-card" data-theme="sunset" type="button">
+        <span class="card-preview preview-sunset"></span>
+        <span class="card-name">Sunset</span>
+      </button>
+      <button class="cosmetic-card" data-theme="midnight" type="button">
+        <span class="card-preview preview-midnight"></span>
+        <span class="card-name">Midnight</span>
+      </button>
+      <button class="cosmetic-card" data-theme="forest" type="button">
+        <span class="card-preview preview-forest"></span>
+        <span class="card-name">Forest</span>
+      </button>
+      <button class="cosmetic-card" data-theme="aurora" type="button">
+        <span class="card-preview preview-aurora"></span>
+        <span class="card-name">Aurora</span>
+      </button>
+      <button class="cosmetic-card" data-theme="neon" type="button">
+        <span class="card-preview preview-neon"></span>
+        <span class="card-name">Neon</span>
+      </button>
+      <button class="cosmetic-card" data-theme="beach" type="button">
+        <span class="card-preview preview-beach"></span>
+        <span class="card-name">Beach Glow</span>
+      </button>
+    </section>
+
+    <section class="custom-bg-panel" aria-label="Custom background assets">
+      <div class="custom-bg-header">
+        <p class="eyebrow">Developer assets</p>
+        <h2>Custom backgrounds</h2>
+      </div>
+      <p class="custom-bg-note">Drop your own files into the assets/backgrounds folder and add them to assets/backgrounds.js to make them selectable here.</p>
+      <div id="customAssetList" class="custom-asset-list" aria-live="polite"></div>
+      <button id="clearCustomBg" class="secondary-button" type="button">Clear selected custom background</button>
+    </section>
+  </main>
+
+  <script src="assets/backgrounds.js"></script>
+  <script src="cosmetics.js"></script>
+</body>
+</html>

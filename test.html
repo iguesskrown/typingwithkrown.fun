@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Typing Test — Typingwithkrown.fun</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="capsule-nav" aria-label="Main navigation">
+    <div class="logo">Typingwithkrown.fun</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="cosmetics.html">Cosmetics</a>
+      <a href="index.html#connect">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container content test-page">
+    <header>
+      <h1>Typing Test</h1>
+      <p class="tag">Focus mode — no live stats. Results will appear when time's up.</p>
+    </header>
+
+    <section class="test-top">
+      <div class="timer">Time left: <strong id="time" aria-live="polite">00:00</strong></div>
+      <div class="controls-top">
+        <button id="restartBtn" class="ghost" aria-label="Restart test">Restart</button>
+      </div>
+    </section>
+
+    <section class="test-area">
+      <div id="textDisplay" class="text-display" aria-live="polite" tabindex="0"></div>
+      <!-- Hidden textarea for input capture (no visible box) -->
+      <textarea id="input" class="visually-hidden-input" aria-label="Typing input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    </section>
+
+    <div class="keyboard-space" aria-hidden="true"></div>
+    <section class="on-screen-keyboard">
+      <div id="onScreenKeyboard" class="keyboard" aria-hidden="true"></div>
+    </section>
+
+    <footer>
+      <small>Made with ❤️ — Krown</small>
+    </footer>
+  </main>
+
+  <!-- Result popup card -->
+  <div id="resultCard" class="results-card" hidden role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+    <div class="results-card-inner">
+      <h2 id="resultTitle">Test Complete</h2>
+      <p>WPM: <strong id="finalWpm">0</strong></p>
+      <p>Accuracy: <strong id="finalAcc">0%</strong></p>
+      <p>Characters typed: <strong id="finalChars">0</strong></p>
+      <div id="resultReaction" class="result-reaction" aria-live="polite">🎉</div>
+      <div id="resultStars" class="result-stars" aria-label="Result rating"></div>
+      <div class="results-actions">
+        <button id="retryBtn" class="primary">Try again</button>
+        <a href="index.html" class="result-home">Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="test.js"></script>
+</body>
+</html>
